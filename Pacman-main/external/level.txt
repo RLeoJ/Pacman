@@ -1,6 +1,6 @@
 ############################
 #OOOOOOOOOOOO##OOOOOOOOOOOO#
-#O####O#####O##O#####O####O#
+#C####O#####O##O#####O####C#
 #O####O#####O##O#####O####O#
 #O####O#####O##O#####O####O#
 #OOOOOOOOOOOOOOOOOOOOOOOOOO#
@@ -14,16 +14,16 @@
 ######O##E########E##O######
 EEEEEEOEEE########EEEOEEEEEE
 ######O##E########E##O######
-######O##E########E##O######
+######O##F########F##O######
 ######O##EEEEEEEEEE##O######
 ######O#####E##E#####O######
 ######O#####E##E#####O######
 #OOOOOO##OOOO##OOOO##OOOOOO#
 #O####O##O########O##O####O#
 #O####O##O########O##O####O#
-#OOOOOOOOOOOOOOOOOOOOOOOOOO#
+#OOOOOOOOOOOOPOOOOOOOOOOOOO#
 #O####O#####O##O#####O####O#
 #O####O#####O##O#####O####O#
-#O####O#####O##O#####O####O#
+#C####O#####O##O#####O####C#
 #OOOOOOOOOOOO##OOOOOOOOOOOO#
 ############################

@@ -55,8 +55,6 @@ void Game::handleInputs() {
 void Game::update(float dt) {
     timeSinceStart += dt;
     const float t = timeSinceStart * 0.3f;
-    
-    Matrix4 basePosition = Matrix4::createTranslation(Vector3(0.0f, 0.0f, -4.0f));
 }
 
 void Game::render() {

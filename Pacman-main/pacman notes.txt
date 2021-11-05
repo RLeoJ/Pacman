@@ -1,39 +1,29 @@
-grid system
-Designated as enums (path,wall,teleporter)
-	x tiles are impassable
-	o tiles get a bool for dot
-
-
-points system
-takes the array of o tiles and adds a new point whenever bool is flipped
-handles win condition for if all bools are flipped
-
-move system
-handles move direction
-player move system works with input system
-ghost move system works with rng behavior system
-
-ghost system
-base ghost class decision chances
-	each ghost is just a child of base ghost with different decision values
-bool for if pill is triggered
-
 there are a max of 4 move options at any moment. on a dice roll, the ghost will chose to either move to the block closer to pacman or away depending on the ghost. (must know how to determine which block is closer)
 -loop through adjacent spaces to check for empty space. char CheckSpaces() { return availablespaces[]}
 -determine if ghost wants to move closer or further from pacman. bool moveDecision{ return movedecision that is either closer or farther}
 - send movedecision to newposition to update position
 
+ghost and pacman must update on tick. 
+
+death: if food is eaten, a ghost dies, or pacman dies, they must be removed from the array.
+
+if pacman is in a space on the grid, 
+	if its food, remove food from grid
+	if its ghost && pacman has superfood, remove ghost from grid
+		else if its ghost && pacman doesnt have superfood, remove pacman from grid and trigger gameover
 
 pill system
 starts a timer
 while timer i > 0, ghost behavior is to always move away
 
-glposision = projmatrix*viewmatrix*modelmatrix*position
 
-moving the cube is updating the matrix of cube and feeding that new data to the shader (letting the GPU do this will be more efficient)
-the most important thing about building pacman is understanding how to feed unformation to the GPU
-
-
-set data layout
-use shader that takes uniforms(data) 
-update screen with new resulting image
+ghost movement
+decide of ghost wants to move closer or farther
+if farther
+	for each adjacent tile, 
+		if tile is farther than all other options //this must be split into an if and 3 more elseif's
+			move to that tile
+if closer
+	for each adjacent tile, 
+		if tile is closer than all other options //this must be split into an if and 3 more elseif's
+			move to that tile
